@@ -1,0 +1,36 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*:before,*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+} // - меняет подсчет ширины блока, для удобства верстки
+
+:focus,:active{outline: None;}
+a:focus,a:active{outline: None;}
+// Убирает линии обводки в некоторых браузерах
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-box-size-adjust: 100%;
+} // выравнивает размеры в разных браузерах
+
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display:none;} // убирает крест в инпуте в IE
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0; border:0;}
+a, a:visited, a:hover{text-decoration: none;}
+ul li{list-style:none;}
+img{vertical-align: top;}
